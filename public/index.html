@@ -189,11 +189,19 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
         }
 
+        @media (max-width: 900px) {
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
         @media (max-width: 720px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 480px) {
             .gallery-grid { grid-template-columns: 1fr; }
         }
 
@@ -432,7 +440,7 @@
 
     <!-- Preview Gallery -->
     <section class="preview-gallery">
-        <h2>See what's inside</h2>
+        <h2>See what's inside — 2027 Collection</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="01-january-snowdrops.png" alt="January — Snowdrops">
@@ -445,6 +453,42 @@
             <div class="gallery-item">
                 <img src="03-march-daffodils.png" alt="March — Daffodils">
                 <div class="label">March · Daffodils</div>
+            </div>
+            <div class="gallery-item">
+                <img src="04-april-bluebells.png" alt="April — Bluebells">
+                <div class="label">April · Bluebells</div>
+            </div>
+            <div class="gallery-item">
+                <img src="05-may-wild-roses.png" alt="May — Wild Roses">
+                <div class="label">May · Wild Roses</div>
+            </div>
+            <div class="gallery-item">
+                <img src="06-june-foxgloves.png" alt="June — Foxgloves">
+                <div class="label">June · Foxgloves</div>
+            </div>
+            <div class="gallery-item">
+                <img src="07-july-lavender.png" alt="July — Lavender">
+                <div class="label">July · Lavender</div>
+            </div>
+            <div class="gallery-item">
+                <img src="08-august-sunflowers.png" alt="August — Sunflowers">
+                <div class="label">August · Sunflowers</div>
+            </div>
+            <div class="gallery-item">
+                <img src="09-september-coneflowers.png" alt="September — Coneflowers">
+                <div class="label">September · Coneflowers</div>
+            </div>
+            <div class="gallery-item">
+                <img src="10-october-chrysanthemums.png" alt="October — Chrysanthemums">
+                <div class="label">October · Chrysanthemums</div>
+            </div>
+            <div class="gallery-item">
+                <img src="11-november-heather.png" alt="November — Heather">
+                <div class="label">November · Heather</div>
+            </div>
+            <div class="gallery-item">
+                <img src="12-december-winterberry.png" alt="December — Winterberry">
+                <div class="label">December · Winterberry</div>
             </div>
         </div>
     </section>
